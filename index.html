@@ -1,1 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="SHASHAKT - AI-powered livelihood and skill guidance platform"
+    >
+
+    <title>SHASHAKT | Livelihood Assistant</title>
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <div class="app">
+
+        <!-- ================= HEADER ================= -->
+
+        <header class="topbar">
+
+            <div class="brand">
+
+                <div class="brand-mark">
+                    S
+                </div>
+
+                <div class="brand-info">
+
+                    <h1>SHASHAKT</h1>
+
+                    <span>
+                        Livelihood &amp; Skill Assistant
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="system-status">
+
+                <span class="status-indicator"></span>
+
+                <span>
+                    Assistant available
+                </span>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- ================= MAIN ================= -->
+
+        <main class="main-content">
+
+            <section class="assistant-panel">
+
+
+                <!-- INTRO -->
+
+                <div class="intro">
+
+                    <div class="assistant-icon">
+                        S
+                    </div>
+
+                    <div class="intro-content">
+
+                        <p class="eyebrow">
+                            PERSONALIZED GUIDANCE
+                        </p>
+
+                        <h2>
+                            Namaste. How can I help you today?
+                        </h2>
+
+                        <p class="intro-description">
+                            Tell me about your education, skills,
+                            interests and location. I can help you
+                            find suitable training and livelihood
+                            opportunities.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- CONVERSATION -->
+
+                <div
+                    id="messages"
+                    class="messages"
+                    aria-live="polite"
+                >
+
+                    <!-- Messages will be inserted here -->
+
+                </div>
+
+
+
+                <!-- TYPING -->
+
+                <div
+                    id="typing"
+                    class="typing hidden"
+                >
+
+                    <div class="typing-avatar">
+                        S
+                    </div>
+
+                    <div class="typing-content">
+
+                        <span>SHASHAKT</span>
+
+                        <div class="typing-dots">
+
+                            <i></i>
+                            <i></i>
+                            <i></i>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+
+        <!-- ================= INPUT ================= -->
+
+        <footer class="composer-area">
+
+            <div class="composer-container">
+
+
+                <div class="input-box">
+
+                    <textarea
+                        id="messageInput"
+                        rows="1"
+                        placeholder="Describe your situation or ask a question..."
+                        aria-label="Message SHASHAKT"
+                    ></textarea>
+
+
+                    <div class="input-actions">
+
+                        <button
+                            id="micButton"
+                            class="icon-button"
+                            type="button"
+                            aria-label="Use voice input"
+                            title="Voice input"
+                        >
+                            <svg
+                                viewBox="0 0 24 24"
+                                aria-hidden="true"
+                            >
+                                <path
+                                    d="M12 14a3 3 0 0 0 3-3V6a3 3 0 0 0-6 0v5a3 3 0 0 0 3 3Z"
+                                />
+
+                                <path
+                                    d="M19 11a7 7 0 0 1-14 0"
+                                />
+
+                                <path
+                                    d="M12 18v4"
+                                />
+
+                                <path
+                                    d="M8 22h8"
+                                />
+                            </svg>
+                        </button>
+
+
+                        <button
+                            id="sendButton"
+                            class="send-button"
+                            type="button"
+                            aria-label="Send message"
+                            title="Send"
+                        >
+
+                            <svg
+                                viewBox="0 0 24 24"
+                                aria-hidden="true"
+                            >
+                                <path
+                                    d="M22 2 11 13"
+                                />
+
+                                <path
+                                    d="m22 2-7 20-4-9-9-4Z"
+                                />
+
+                            </svg>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- QUICK PROMPTS -->
+
+                <div class="quick-prompts">
+
+                    <button
+                        type="button"
+                        onclick="quickMessage('Main 12th pass hoon')"
+                    >
+                        <span>Education</span>
+                    </button>
+
+
+                    <button
+                        type="button"
+                        onclick="quickMessage('Mujhe computer field mein interest hai')"
+                    >
+                        <span>Skills &amp; interests</span>
+                    </button>
+
+
+                    <button
+                        type="button"
+                        onclick="quickMessage('Mere area mein training opportunities batao')"
+                    >
+                        <span>Local opportunities</span>
+                    </button>
+
+
+                    <button
+                        type="button"
+                        onclick="quickMessage('Mujhe career guidance chahiye')"
+                    >
+                        <span>Career guidance</span>
+                    </button>
+
+                </div>
+
+
+                <div class="composer-note">
+
+                    <span>
+                        You can type or use voice input
+                    </span>
+
+                    <span class="separator">•</span>
+
+                    <span>
+                        SHASHAKT provides guidance, not official eligibility decisions
+                    </span>
+
+                </div>
+
+            </div>
+
+        </footer>
+
+
+
+        <!-- ================= FOOTER ================= -->
+
+        <div class="bottom-bar">
+
+            <span>
+                SHASHAKT
+            </span>
+
+            <span>
+                AI-powered livelihood guidance
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
