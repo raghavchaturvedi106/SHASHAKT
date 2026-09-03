@@ -1,0 +1,16 @@
+[
+  {
+    "id": "TR001",
+    "title": "Basic Computer Training",
+    "level": "Beginner",
+    "skills": ["computer", "digital literacy"],
+    "mode": "Offline/Online"
+  },
+  {
+    "id": "TR002",
+    "title": "Web Development Training",
+    "level": "Beginner",
+    "skills": ["html", "css", "javascript"],
+    "mode": "Online"
+  }
+]
