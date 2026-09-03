@@ -1,4 +1,4 @@
-const API_BASE = "https://shashakt.onrender.com/";
+const API_BASE = "https://shashakt.onrender.com";
 
 const CHAT_URL = `${API_BASE}/chat`;
 
