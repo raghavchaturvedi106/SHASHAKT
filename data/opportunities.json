@@ -1,0 +1,20 @@
+[
+  {
+    "id": "OP001",
+    "title": "Computer Operator",
+    "type": "Training + Job",
+    "location": "Mathura",
+    "education": "10th/12th",
+    "skills": ["computer", "typing", "ms office"],
+    "description": "Computer operation, typing and office work."
+  },
+  {
+    "id": "OP002",
+    "title": "Web Development Training",
+    "type": "Training",
+    "location": "Online",
+    "education": "12th",
+    "skills": ["html", "css", "javascript"],
+    "description": "Learn web development and programming fundamentals."
+  }
+]
